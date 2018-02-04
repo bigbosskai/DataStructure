@@ -26,7 +26,8 @@ int main(int argc, char *argv[]) {
 			printf("tmp->age:%d\n",tmp->age);	
 		}
 	}
-	for(i=0; i<SeqList_Length(list); i++){
+	int len=SeqList_Length(list);
+	for(i=0; i<len; i++){
 		SeqList_Delete(list,i);
 	}
 	SeqList_Destroy(list);
